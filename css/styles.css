@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+.hero {
+  background-image: url(../img/cover.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-top {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #242933;
+}
+
+.footer-top a {
+  color: white;
+}
+
+.footer-top a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  background-color: #242933;
+}
