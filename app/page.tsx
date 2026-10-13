@@ -23,6 +23,7 @@ export default function Home() {
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">EXPERIENCE</Link>
+            <Link href="#portfolio" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PORTFOLIO</Link>
             <Link href="#philosophy" className="hover:text-fuchsia-400 hover:drop-shadow-[0_0_5px_rgba(232,121,249,0.8)] transition-all">ABOUT</Link>
             <Link href="#education" className="hover:text-purple-400 hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)] transition-all">EDUCATION</Link>
             <Link href="#contact" className="hover:text-yellow-400 hover:drop-shadow-[0_0_5px_rgba(250,204,21,0.8)] transition-all">CONTACT</Link>
@@ -121,6 +122,61 @@ export default function Home() {
               <CareerRow company="MEGATECH" role="Help Desk Analyst — enterprise clients" period="2013 — 2019" />
               <CareerRow company="MONITS" role="Java Developer Trainee — Scrum / Linux" period="2011" />
             </ul>
+          </div>
+        </section>
+
+        {/* Portfolio */}
+        <section id="portfolio" className="py-20 space-y-12 border-t border-cyan-900/30">
+          <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
+            <h2 className="text-2xl font-bold tracking-widest text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.6)]">
+              // PORTFOLIO
+            </h2>
+            <span className="text-xs font-mono text-cyan-700">ABAP Cloud + clásico + Datasphere, código + evidencia</span>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <ProjectCard
+              title="ZRAP_SALES"
+              description="RAP managed BO pedidos Z: behavior, validation importe>0, action aprobar, OData V4 + Fiori Elements."
+              tags={["RAP", "ODATA", "FIORI"]}
+              color="cyan"
+              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/01%20-%20sap-abap-portfolio/05-rap-ventas"
+            />
+            <ProjectCard
+              title="ZCDS_COSTS"
+              description="CDS cube + analytical query + virtual element + DCL por país."
+              tags={["CDS", "ANALYTICS", "DCL"]}
+              color="fuchsia"
+              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/01%20-%20sap-abap-portfolio/06-cds-costes"
+            />
+            <ProjectCard
+              title="ZSD_ENHANCE"
+              description="Validación crédito SD en exit/BADI + ALV OO hotspot + wrapper BAPI + log ZBAL."
+              tags={["BADI", "ALV", "BAPI"]}
+              color="purple"
+              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/01%20-%20sap-abap-portfolio/07-classic-sd-alv"
+            />
+            <ProjectCard
+              title="DATASPHERE_TRIAL"
+              description="4 objetos deployados tenant real: Replication Flow, Data Flow, Graphical View, SQL View."
+              tags={["DATASPHERE", "HANA", "TRIAL"]}
+              color="cyan"
+              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/04-datasphere-trial"
+            />
+            <ProjectCard
+              title="BW_MIGRATION"
+              description="Mapeo BW→BW/4HANA→Datasphere validado en tenant + PDF 2 páginas."
+              tags={["BW", "ADSO", "PDF"]}
+              color="yellow"
+              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/02-bw-migration"
+            />
+            <ProjectCard
+              title="DATA_QUALITY"
+              description="Controles drift Pandas+SQL con self-check, reporte reproducible."
+              tags={["PYTHON", "SQL", "DQ"]}
+              color="purple"
+              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/03-data-quality"
+            />
           </div>
         </section>
 
@@ -261,7 +317,7 @@ function ProjectCard({ title, description, tags, color, href }: { title: string,
   };
 
   return (
-    <Link href={href} className={`group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`}>
+    <Link href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className={`group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`}>
       <div className="flex justify-between items-start">
         <h3 className={`text-xl font-bold text-white tracking-wider transition-colors ${textColors[safeColor]}`}>
           {title}
