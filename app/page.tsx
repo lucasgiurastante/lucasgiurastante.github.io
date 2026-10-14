@@ -140,21 +140,21 @@ export default function Home() {
               description="RAP managed BO pedidos Z: behavior, validation importe>0, action aprobar, OData V4 + Fiori Elements."
               tags={["RAP", "ODATA", "FIORI"]}
               color="cyan"
-              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/01%20-%20sap-abap-portfolio/05-rap-ventas"
+              href="https://github.com/lucasgiurastante/sap-abap-portfolio/tree/main/05-rap-ventas"
             />
             <ProjectCard
               title="ZCDS_COSTS"
               description="CDS cube + analytical query + virtual element + DCL por país."
               tags={["CDS", "ANALYTICS", "DCL"]}
               color="fuchsia"
-              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/01%20-%20sap-abap-portfolio/06-cds-costes"
+              href="https://github.com/lucasgiurastante/sap-abap-portfolio/tree/main/06-cds-costes"
             />
             <ProjectCard
               title="ZSD_ENHANCE"
               description="Validación crédito SD en exit/BADI + ALV OO hotspot + wrapper BAPI + log ZBAL."
               tags={["BADI", "ALV", "BAPI"]}
               color="purple"
-              href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/01%20-%20sap-abap-portfolio/07-classic-sd-alv"
+              href="https://github.com/lucasgiurastante/sap-abap-portfolio/tree/main/07-classic-sd-alv"
             />
             <ProjectCard
               title="DATASPHERE_TRIAL"
