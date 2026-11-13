@@ -131,7 +131,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold tracking-widest text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.6)]">
               // PORTFOLIO
             </h2>
-            <span className="text-xs font-mono text-cyan-700">ABAP Cloud + clásico + Datasphere, código + evidencia</span>
+            <span className="text-xs font-mono text-cyan-700">SAP + Data + AI, código + demos</span>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -176,6 +176,14 @@ export default function Home() {
               tags={["PYTHON", "SQL", "DQ"]}
               color="purple"
               href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/03-data-quality"
+            />
+            <ProjectCard
+              title="AI_HELP_DESK_AUTOMATION"
+              description="Agente explicable de soporte IT que clasifica tickets sintéticos, evalúa riesgo y deriva casos para aprobación humana. Incluye una demo interactiva en Streamlit, ejecutada en modo seguro con adaptadores mock."
+              tags={["PYTHON", "AI AUTOMATION", "STREAMLIT", "DRY-RUN"]}
+              color="fuchsia"
+              href="https://github.com/lucasgiurastante/ai-helpdesk-triage-agent"
+              demoHref="https://triage-lab.streamlit.app/"
             />
           </div>
         </section>
@@ -295,12 +303,22 @@ function CareerRow({ company, role, period }: { company: string, role: string, p
   );
 }
 
-function ProjectCard({ title, description, tags, color, href }: { title: string, description: string, tags: string[], color: "cyan" | "fuchsia" | "purple" | "yellow", href: string }) {
-  // Valid color options for the card styling
-  const validColors = ["cyan", "fuchsia", "purple", "yellow"] as const;
+const PROJECT_CARD_COLORS = ["cyan", "fuchsia", "purple", "yellow"] as const;
+type ProjectCardColor = (typeof PROJECT_CARD_COLORS)[number];
 
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  tags: string[];
+  color: ProjectCardColor;
+  href: string;
+  demoHref?: string;
+}
+
+function ProjectCard({ title, description, tags, color, href, demoHref }: ProjectCardProps) {
+  // Valid color options for the card styling
   // Runtime validation: default to "cyan" if an invalid color is provided
-  const safeColor = validColors.includes(color) ? color : "cyan";
+  const safeColor = PROJECT_CARD_COLORS.includes(color) ? color : "cyan";
 
   const colorClasses = {
     cyan: "group-hover:border-cyan-500/50 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]",
@@ -316,8 +334,8 @@ function ProjectCard({ title, description, tags, color, href }: { title: string,
     yellow: "group-hover:text-yellow-400",
   };
 
-  return (
-    <Link href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className={`group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`}>
+  const cardContent = (
+    <>
       <div className="flex justify-between items-start">
         <h3 className={`text-xl font-bold text-white tracking-wider transition-colors ${textColors[safeColor]}`}>
           {title}
@@ -334,6 +352,24 @@ function ProjectCard({ title, description, tags, color, href }: { title: string,
           </span>
         ))}
       </div>
+      {demoHref && (
+        <div className="flex gap-6 pt-2 text-[10px] font-bold tracking-widest text-cyan-500">
+          <a href={href} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition-colors">SOURCE CODE ↗</a>
+          <a href={demoHref} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-300 transition-colors">LIVE DEMO ↗</a>
+        </div>
+      )}
+    </>
+  );
+
+  const cardClassName = `group block space-y-4 p-6 bg-[#0a0a1a] border border-cyan-900/30 transition-all duration-300 ${colorClasses[safeColor]}`;
+
+  if (demoHref) {
+    return <article className={cardClassName}>{cardContent}</article>;
+  }
+
+  return (
+    <Link href={href} target={href.startsWith("http") ? "_blank" : undefined} rel={href.startsWith("http") ? "noopener noreferrer" : undefined} className={cardClassName}>
+      {cardContent}
     </Link>
   );
 }
