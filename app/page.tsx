@@ -136,6 +136,14 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ProjectCard
+              title="AI_HELP_DESK_AUTOMATION"
+              description="Agente explicable de soporte IT que clasifica tickets sintéticos, evalúa riesgo y deriva casos para aprobación humana. Incluye una demo interactiva en Streamlit, ejecutada en modo seguro con adaptadores mock."
+              tags={["PYTHON", "AI AUTOMATION", "STREAMLIT", "DRY-RUN"]}
+              color="fuchsia"
+              href="https://github.com/lucasgiurastante/ai-helpdesk-triage-agent"
+              demoHref="https://triage-lab.streamlit.app/"
+            />
+            <ProjectCard
               title="ZRAP_SALES"
               description="RAP managed BO pedidos Z: behavior, validation importe>0, action aprobar, OData V4 + Fiori Elements."
               tags={["RAP", "ODATA", "FIORI"]}
@@ -176,14 +184,6 @@ export default function Home() {
               tags={["PYTHON", "SQL", "DQ"]}
               color="purple"
               href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/03-data-quality"
-            />
-            <ProjectCard
-              title="AI_HELP_DESK_AUTOMATION"
-              description="Agente explicable de soporte IT que clasifica tickets sintéticos, evalúa riesgo y deriva casos para aprobación humana. Incluye una demo interactiva en Streamlit, ejecutada en modo seguro con adaptadores mock."
-              tags={["PYTHON", "AI AUTOMATION", "STREAMLIT", "DRY-RUN"]}
-              color="fuchsia"
-              href="https://github.com/lucasgiurastante/ai-helpdesk-triage-agent"
-              demoHref="https://triage-lab.streamlit.app/"
             />
           </div>
         </section>
