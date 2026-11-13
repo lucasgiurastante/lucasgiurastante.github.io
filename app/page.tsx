@@ -43,8 +43,8 @@ export default function Home() {
               LUCAS LEONEL <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-500 animate-gradient-x">GIURASTANTE</span>
             </h1>
-            <p className="text-xl md:text-2xl text-cyan-300/90 tracking-widest uppercase font-bold">
-              SAP Data &amp; Analytics Analyst
+            <p className="text-lg md:text-xl text-cyan-300/90 tracking-normal font-bold">
+              SAP BW/4HANA · JD Edwards · Soporte de aplicaciones · Service Desk | Help Desk | ES · EN C1 · PT
             </p>
           </div>
           <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-fuchsia-500/50 pl-6">
