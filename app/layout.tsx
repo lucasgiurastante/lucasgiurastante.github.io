@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lucas Leonel Giurastante | SAP BW/4HANA · JD Edwards · Soporte de aplicaciones",
-  description: "Portfolio de Lucas Leonel Giurastante: SAP BW/4HANA, JD Edwards, soporte de aplicaciones, Service Desk y Help Desk. Español nativo, inglés C1 y portugués.",
+  title: "Lucas Giurastante | IT Support Engineer | AI Agents & Help Desk Automation",
+  description: "Lucas Giurastante, IT Support Engineer with 13+ years in IT, L1/L2 support, Service Desk leadership, AI agents, Help Desk automation, ITSM, IAM, SAP BW/4HANA and JD Edwards. Spanish, English C1 and Portuguese.",
 };
 
 export default function RootLayout({

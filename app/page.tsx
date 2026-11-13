@@ -19,7 +19,7 @@ export default function Home() {
             href="/"
             className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400 hover:to-cyan-400 transition-all duration-300"
           >
-            LUCAS_G
+            LUCAS_GIURASTANTE
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">EXPERIENCE</Link>
@@ -39,17 +39,15 @@ export default function Home() {
               <span className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,1)]" />
               OPEN TO WORK — BUENOS AIRES, AR
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.1] drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
-              LUCAS LEONEL <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-cyan-400 animate-gradient-x">GIURASTANTE</span>
+            <h1 className="font-bold tracking-tight text-white leading-tight drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
+              <span className="block text-5xl md:text-7xl">LUCAS GIURASTANTE</span>
+              <span className="mt-2 block text-2xl sm:text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-cyan-400 animate-gradient-x">IT Support Engineer | AI Agents &amp; Help Desk Automation</span>
+              <span className="mt-2 block text-xl sm:text-2xl md:text-3xl text-green-300">SAP BW/4HANA · JD Edwards · ITSM · IAM</span>
+              <span className="mt-2 block text-base sm:text-lg md:text-xl text-cyan-300">ES · EN C1 · PT</span>
             </h1>
-            <p className="text-lg md:text-xl text-cyan-300/90 tracking-normal font-bold">
-              SAP BW/4HANA · JD Edwards · Soporte de aplicaciones · Service Desk | Help Desk | ES · EN C1 · PT
-            </p>
           </div>
           <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-green-500/50 pl-6">
-            2+ years in SAP BW/4HANA, reporting and enterprise systems — across development, testing and production.
-            From Service Desk leadership to SAP integration and data modeling. Now expanding into cloud, data analytics and AI-driven solutions.
+            13+ years in IT, including 8 years in L1/L2 support and Service Desk. I combine service desk leadership with AI agents and workflow automation to make user support faster, safer and easier to track.
           </p>
           <div className="pt-8 flex flex-wrap gap-6">
             <Link
@@ -209,7 +207,10 @@ export default function Home() {
           </div>
           <div className="md:col-span-8 space-y-8 text-cyan-100/80 leading-relaxed font-light">
             <p>
-              IT Support Engineer with <strong className="text-green-400 font-bold">13+ years in IT and 8 years in L1/L2 support and Service Desk operations.</strong> I have led an 8-person team, managed SLA-driven incidents and escalations across ServiceNow, Zendesk, BMC Remedy and Jira, and supported identity, access, networks and enterprise applications. Today I combine that user-focused support background with AI agents and workflow automation, while bringing hands-on experience across SAP, JD Edwards, SQL and BI reporting. Based in Buenos Aires; Spanish native, English C1 and Portuguese advanced.
+              IT Support Engineer with <strong className="text-green-400 font-bold">13+ years in IT, including 8 years in L1/L2 support and Service Desk operations.</strong> I have led an 8-person team and managed SLA-based incidents, requests and escalations across ServiceNow, Zendesk, BMC Remedy and Jira, prioritizing by impact and urgency and tracking service KPIs.
+            </p>
+            <p>
+              My experience also includes identity and access management with AWS IAM and Active Directory, networking (TCP/IP, DHCP, DNS and VPN), and user administration across SAP and corporate applications. I build AI agents and orchestration workflows for support automation, using Python, JavaScript, SQL, REST APIs and AI-assisted coding tools. My enterprise systems background spans SAP S/4HANA and BW/4HANA, Oracle JD Edwards, and reporting with Power BI and Looker Studio. Based in Buenos Aires; Spanish native, English C1 and Portuguese advanced.
             </p>
             <div className="p-6 bg-cyan-950/20 border border-cyan-500/20 rounded-sm relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-green-500 to-cyan-500" />
