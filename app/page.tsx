@@ -5,11 +5,11 @@ const basePath = ""; // Mirror next.config.ts basePath ("/REPO" only for GitHub 
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#050510] text-cyan-50 font-mono selection:bg-fuchsia-500/30 selection:text-fuchsia-200 overflow-x-hidden">
+    <div className="min-h-screen bg-[#050510] text-cyan-50 font-mono selection:bg-green-500/30 selection:text-green-200 overflow-x-hidden">
       {/* Grid Background */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#1a1a2e_1px,transparent_1px),linear-gradient(to_bottom,#1a1a2e_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20" />
-        <div className="absolute bottom-0 left-0 right-0 h-[50vh] bg-gradient-to-t from-fuchsia-900/20 to-transparent opacity-30" />
+        <div className="absolute bottom-0 left-0 right-0 h-[50vh] bg-gradient-to-t from-green-900/20 to-transparent opacity-30" />
       </div>
 
       {/* Navigation */}
@@ -17,15 +17,15 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <Link
             href="/"
-            className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 hover:to-cyan-400 transition-all duration-300"
+            className="text-lg font-bold tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-400 hover:to-cyan-400 transition-all duration-300"
           >
             LUCAS_G
           </Link>
           <div className="flex gap-8 text-xs font-bold tracking-widest uppercase text-cyan-700/80">
             <Link href="#work" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">EXPERIENCE</Link>
             <Link href="#portfolio" className="hover:text-cyan-400 hover:drop-shadow-[0_0_5px_rgba(34,211,238,0.8)] transition-all">PORTFOLIO</Link>
-            <Link href="#philosophy" className="hover:text-fuchsia-400 hover:drop-shadow-[0_0_5px_rgba(232,121,249,0.8)] transition-all">ABOUT</Link>
-            <Link href="#education" className="hover:text-purple-400 hover:drop-shadow-[0_0_5px_rgba(168,85,247,0.8)] transition-all">EDUCATION</Link>
+            <Link href="#philosophy" className="hover:text-green-400 hover:drop-shadow-[0_0_5px_rgba(74,222,128,0.8)] transition-all">ABOUT</Link>
+            <Link href="#education" className="hover:text-green-400 hover:drop-shadow-[0_0_5px_rgba(74,222,128,0.8)] transition-all">EDUCATION</Link>
             <Link href="#contact" className="hover:text-yellow-400 hover:drop-shadow-[0_0_5px_rgba(250,204,21,0.8)] transition-all">CONTACT</Link>
           </div>
         </div>
@@ -41,13 +41,13 @@ export default function Home() {
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white leading-[1.1] drop-shadow-[0_0_15px_rgba(34,211,238,0.3)]">
               LUCAS LEONEL <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-500 animate-gradient-x">GIURASTANTE</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-cyan-400 animate-gradient-x">GIURASTANTE</span>
             </h1>
             <p className="text-lg md:text-xl text-cyan-300/90 tracking-normal font-bold">
               SAP BW/4HANA · JD Edwards · Soporte de aplicaciones · Service Desk | Help Desk | ES · EN C1 · PT
             </p>
           </div>
-          <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-fuchsia-500/50 pl-6">
+          <p className="text-lg md:text-xl text-cyan-100/70 max-w-2xl leading-relaxed font-light border-l-2 border-green-500/50 pl-6">
             2+ years in SAP BW/4HANA, reporting and enterprise systems — across development, testing and production.
             From Service Desk leadership to SAP integration and data modeling. Now expanding into cloud, data analytics and AI-driven solutions.
           </p>
@@ -65,7 +65,7 @@ export default function Home() {
               href="https://www.linkedin.com/in/lucasgiurastante"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 border border-fuchsia-500/50 text-fuchsia-300 font-bold tracking-widest uppercase text-sm hover:bg-fuchsia-900/30 transition-all hover:shadow-[0_0_20px_rgba(232,121,249,0.4)]"
+              className="px-8 py-3 border border-green-500/50 text-green-300 font-bold tracking-widest uppercase text-sm hover:bg-green-900/30 transition-all hover:shadow-[0_0_20px_rgba(74,222,128,0.4)]"
             >
               LINKEDIN
             </a>
@@ -75,7 +75,7 @@ export default function Home() {
         {/* Experience */}
         <section id="work" className="py-20 space-y-12">
           <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
-            <h2 className="text-2xl font-bold tracking-widest text-fuchsia-400 drop-shadow-[0_0_8px_rgba(232,121,249,0.6)]">
+            <h2 className="text-2xl font-bold tracking-widest text-green-400 drop-shadow-[0_0_8px_rgba(74,222,128,0.6)]">
               // EXPERIENCE
             </h2>
             <span className="text-xs font-mono text-cyan-700">14+ years in IT, from support to SAP</span>
@@ -93,14 +93,14 @@ export default function Home() {
               title="SAP_BW4HANA"
               description="Globant x Vital. BW Analyst across DEV, QA and PROD: Advanced DSOs, Calculation Views, CompositeProviders and BEx Queries integrating BW with S/4HANA."
               tags={["BW/4HANA", "HANA", "ADSO"]}
-              color="fuchsia"
+              color="green"
               href="#"
             />
             <ProjectCard
               title="JDE_DEVELOPER"
               description="Globant x Cordis. Oracle JD Edwards developer: UBEs generating XML for bank payments, custom applications and reports, BI Publisher."
               tags={["JDE", "UBE", "BIPUBLISHER"]}
-              color="purple"
+              color="green"
               href="#"
             />
             <ProjectCard
@@ -114,7 +114,7 @@ export default function Home() {
 
           {/* Career log */}
           <div className="p-6 bg-cyan-950/20 border border-cyan-500/20 rounded-sm relative overflow-hidden">
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-cyan-500" />
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-green-500 to-cyan-500" />
             <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">CAREER_LOG</h3>
             <ul className="space-y-3 font-mono text-sm text-cyan-200/70">
               <CareerRow company="GLOBANT" role="SAP Training & Change / BW 4HANA / JDE Developer" period="2021 — PRESENT" />
@@ -139,7 +139,7 @@ export default function Home() {
               title="AI_HELP_DESK_AUTOMATION"
               description="Agente explicable de soporte IT que clasifica tickets sintéticos, evalúa riesgo y deriva casos para aprobación humana. Incluye una demo interactiva en Streamlit, ejecutada en modo seguro con adaptadores mock."
               tags={["PYTHON", "AI AUTOMATION", "STREAMLIT", "DRY-RUN"]}
-              color="fuchsia"
+              color="green"
               href="https://github.com/lucasgiurastante/ai-helpdesk-triage-agent"
               demoHref="https://triage-lab.streamlit.app/"
             />
@@ -154,14 +154,14 @@ export default function Home() {
               title="ZCDS_COSTS"
               description="CDS cube + analytical query + virtual element + DCL por país."
               tags={["CDS", "ANALYTICS", "DCL"]}
-              color="fuchsia"
+              color="green"
               href="https://github.com/lucasgiurastante/sap-abap-portfolio/tree/main/06-cds-costes"
             />
             <ProjectCard
               title="ZSD_ENHANCE"
               description="Validación crédito SD en exit/BADI + ALV OO hotspot + wrapper BAPI + log ZBAL."
               tags={["BADI", "ALV", "BAPI"]}
-              color="purple"
+              color="green"
               href="https://github.com/lucasgiurastante/sap-abap-portfolio/tree/main/07-classic-sd-alv"
             />
             <ProjectCard
@@ -182,7 +182,7 @@ export default function Home() {
               title="DATA_QUALITY"
               description="Controles drift Pandas+SQL con self-check, reporte reproducible."
               tags={["PYTHON", "SQL", "DQ"]}
-              color="purple"
+              color="green"
               href="https://github.com/lucasgiurastante/sap-datasphere-portfolio/tree/main/03-data-quality"
             />
           </div>
@@ -209,33 +209,33 @@ export default function Home() {
           </div>
           <div className="md:col-span-8 space-y-8 text-cyan-100/80 leading-relaxed font-light">
             <p>
-              Enterprise systems specialist with a rare combo: <strong className="text-fuchsia-400 font-bold">deep SAP/JDE technical work plus Service Desk leadership.</strong> I
+              Enterprise systems specialist with a rare combo: <strong className="text-green-400 font-bold">deep SAP/JDE technical work plus Service Desk leadership.</strong> I
               translate between business and systems — training users on Fiori, modeling data in BW/4HANA, and keeping critical
               apps running. Trilingual: Spanish native, English and Portuguese advanced.
             </p>
             <div className="p-6 bg-cyan-950/20 border border-cyan-500/20 rounded-sm relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-cyan-500" />
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-green-500 to-cyan-500" />
               <div className="grid grid-cols-2 gap-8 font-mono text-sm">
                 <div>
                   <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">STACK_TRACE</h3>
                   <ul className="space-y-2 text-cyan-200/70">
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> SAP BW/4HANA, Fiori, Cloud ALM</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> SQL, Analysis for Office</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> JDE EnterpriseOne, BI Publisher</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> JavaScript / Node / React</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Agile / Scrum, Jira</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> AI tools: Gemini, Copilot</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> SAP BW/4HANA, Fiori, Cloud ALM</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> SQL, Analysis for Office</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> JDE EnterpriseOne, BI Publisher</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> JavaScript / Node / React</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> Agile / Scrum, Jira</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> AI tools: Gemini, Copilot</li>
                   </ul>
                 </div>
                 <div>
                   <h3 className="text-cyan-400 mb-4 tracking-widest uppercase text-xs border-b border-cyan-800 pb-2">PROTOCOLS</h3>
                   <ul className="space-y-2 text-cyan-200/70">
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Communication</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Teamwork</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Problem-solving</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Adaptability</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Analytical thinking</li>
-                    <li className="flex items-center gap-2"><span className="text-fuchsia-500">›</span> Stakeholder collaboration</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> Communication</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> Teamwork</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> Problem-solving</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> Adaptability</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> Analytical thinking</li>
+                    <li className="flex items-center gap-2"><span className="text-green-400">›</span> Stakeholder collaboration</li>
                   </ul>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export default function Home() {
         {/* Education */}
         <section id="education" className="py-20 space-y-12 border-t border-cyan-900/30">
           <div className="flex items-end justify-between border-b border-cyan-900/30 pb-4">
-            <h2 className="text-2xl font-bold tracking-widest text-purple-400 drop-shadow-[0_0_8px_rgba(168,85,247,0.6)]">
+            <h2 className="text-2xl font-bold tracking-widest text-green-400 drop-shadow-[0_0_8px_rgba(74,222,128,0.6)]">
               // EDUCATION
             </h2>
             <span className="text-xs font-mono text-cyan-700">Always learning</span>
@@ -259,6 +259,38 @@ export default function Home() {
             <CareerRow company="TRADE EMPLOYEE CENTER" role="Network Administrator Technician" period="2009" />
             <CareerRow company="TECHNICAL SCHOOL No.6" role="Organizational management technician" period="2005 — 2008" />
           </ul>
+
+          <div className="space-y-5">
+            <h3 className="text-sm font-bold tracking-widest text-green-400">CERTIFICATIONS</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <article className="group p-6 space-y-4 border border-green-900/40 bg-green-950/10 hover:border-green-500/50 transition-colors">
+                <div className="text-[10px] font-bold tracking-[0.18em] text-green-500">OPENAI ACADEMY</div>
+                <div>
+                  <h4 className="text-lg font-bold text-white">Apply AI at Work</h4>
+                  <p className="mt-2 text-sm text-cyan-100/60">Pathway Completion Certificate · Issued Nov 12, 2026</p>
+                </div>
+                <a href="/certifications/openai-apply-ai-at-work.png" target="_blank" rel="noopener noreferrer" className="inline-block text-xs font-bold tracking-widest text-green-400 hover:text-green-300 transition-colors">
+                  VIEW CERTIFICATE ↗
+                </a>
+              </article>
+
+              <article className="group p-6 space-y-4 border border-green-900/40 bg-green-950/10 hover:border-green-500/50 transition-colors">
+                <div className="text-[10px] font-bold tracking-[0.18em] text-green-500">IBM SKILLSBUILD</div>
+                <div>
+                  <h4 className="text-lg font-bold text-white">Cybersecurity Fundamentals</h4>
+                  <p className="mt-2 text-sm text-cyan-100/60">Issued Nov 11, 2026</p>
+                </div>
+                <div className="flex flex-wrap gap-x-6 gap-y-2">
+                  <a href="/certifications/ibm-cybersecurity-fundamentals.pdf" target="_blank" rel="noopener noreferrer" className="text-xs font-bold tracking-widest text-green-400 hover:text-green-300 transition-colors">
+                    VIEW CERTIFICATE ↗
+                  </a>
+                  <a href="https://www.credly.com/badges/fea79394-8a69-45d8-9dff-47f59f517ddc" target="_blank" rel="noopener noreferrer" className="text-xs font-bold tracking-widest text-green-400 hover:text-green-300 transition-colors">
+                    VERIFY CREDENTIAL ↗
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
         </section>
 
         {/* Contact */}
@@ -273,7 +305,7 @@ export default function Home() {
             <div className="flex flex-col items-center gap-6">
               <a
                 href="mailto:yurastantelucas@gmail.com"
-                className="px-10 py-4 bg-fuchsia-600 text-white font-bold tracking-widest uppercase text-sm hover:bg-fuchsia-500 transition-all hover:shadow-[0_0_30px_rgba(232,121,249,0.6)] hover:scale-105 duration-300 clip-path-polygon"
+                className="px-10 py-4 bg-green-600 text-white font-bold tracking-widest uppercase text-sm hover:bg-green-500 transition-all hover:shadow-[0_0_30px_rgba(74,222,128,0.6)] hover:scale-105 duration-300 clip-path-polygon"
               >
                 yurastantelucas@gmail.com
               </a>
@@ -296,14 +328,14 @@ export default function Home() {
 function CareerRow({ company, role, period }: { company: string, role: string, period: string }) {
   return (
     <li className="flex flex-col md:flex-row md:items-center gap-1 md:gap-4 border-l border-cyan-900/50 pl-4">
-      <span className="text-fuchsia-400 font-bold tracking-widest">{company}</span>
+      <span className="text-green-400 font-bold tracking-widest">{company}</span>
       <span className="flex-1">{role}</span>
       <span className="text-cyan-700">{period}</span>
     </li>
   );
 }
 
-const PROJECT_CARD_COLORS = ["cyan", "fuchsia", "purple", "yellow"] as const;
+const PROJECT_CARD_COLORS = ["cyan", "green", "yellow"] as const;
 type ProjectCardColor = (typeof PROJECT_CARD_COLORS)[number];
 
 interface ProjectCardProps {
@@ -322,15 +354,13 @@ function ProjectCard({ title, description, tags, color, href, demoHref }: Projec
 
   const colorClasses = {
     cyan: "group-hover:border-cyan-500/50 group-hover:shadow-[0_0_20px_rgba(34,211,238,0.2)]",
-    fuchsia: "group-hover:border-fuchsia-500/50 group-hover:shadow-[0_0_20px_rgba(232,121,249,0.2)]",
-    purple: "group-hover:border-purple-500/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.2)]",
+    green: "group-hover:border-green-500/50 group-hover:shadow-[0_0_20px_rgba(74,222,128,0.2)]",
     yellow: "group-hover:border-yellow-500/50 group-hover:shadow-[0_0_20px_rgba(234,179,8,0.2)]",
   };
 
   const textColors = {
     cyan: "group-hover:text-cyan-400",
-    fuchsia: "group-hover:text-fuchsia-400",
-    purple: "group-hover:text-purple-400",
+    green: "group-hover:text-green-400",
     yellow: "group-hover:text-yellow-400",
   };
 
