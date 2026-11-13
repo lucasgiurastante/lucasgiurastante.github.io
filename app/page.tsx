@@ -209,9 +209,7 @@ export default function Home() {
           </div>
           <div className="md:col-span-8 space-y-8 text-cyan-100/80 leading-relaxed font-light">
             <p>
-              Enterprise systems specialist with a rare combo: <strong className="text-green-400 font-bold">deep SAP/JDE technical work plus Service Desk leadership.</strong> I
-              translate between business and systems — training users on Fiori, modeling data in BW/4HANA, and keeping critical
-              apps running. Trilingual: Spanish native, English and Portuguese advanced.
+              IT Support Engineer with <strong className="text-green-400 font-bold">13+ years in IT and 8 years in L1/L2 support and Service Desk operations.</strong> I have led an 8-person team, managed SLA-driven incidents and escalations across ServiceNow, Zendesk, BMC Remedy and Jira, and supported identity, access, networks and enterprise applications. Today I combine that user-focused support background with AI agents and workflow automation, while bringing hands-on experience across SAP, JD Edwards, SQL and BI reporting. Based in Buenos Aires; Spanish native, English C1 and Portuguese advanced.
             </p>
             <div className="p-6 bg-cyan-950/20 border border-cyan-500/20 rounded-sm relative overflow-hidden">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 via-green-500 to-cyan-500" />
