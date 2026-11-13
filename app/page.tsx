@@ -252,6 +252,8 @@ export default function Home() {
             <span className="text-xs font-mono text-cyan-700">Always learning</span>
           </div>
           <ul className="space-y-3 font-mono text-sm text-cyan-200/70">
+            <CareerRow company="BI CONSULTING" role="Business Intelligence — análisis de datos, Google Sheets, Looker Studio e IA aplicada" period="Sep — Dec 2026 · IN PROGRESS" />
+            <CareerRow company="IBM SKILLSBUILD" role="10-Week Professional Certificate in Cybersecurity — governance, risk, compliance, data privacy, vulnerability and cloud security, security operations, incident response and forensics" period="Sep — Dec 2026 · IN PROGRESS" />
             <CareerRow company="CODO A CODO" role="Full Stack Programming — JavaScript / Node / React" period="2022" />
             <CareerRow company="UDEMY" role="Web Programming — HTML5, CSS3, JS, jQuery, Bootstrap, MySQL" period="2021" />
             <CareerRow company="EDUCACION IT" role="Web programming and development" period="2016" />
@@ -259,6 +261,15 @@ export default function Home() {
             <CareerRow company="TRADE EMPLOYEE CENTER" role="Network Administrator Technician" period="2009" />
             <CareerRow company="TECHNICAL SCHOOL No.6" role="Organizational management technician" period="2005 — 2008" />
           </ul>
+
+          <div className="flex flex-wrap gap-x-6 gap-y-2 font-mono text-xs">
+            <a href="https://docs.google.com/document/d/1BoDMGqKvHo0Ly40gE91NpN1ykWta7Oy0/edit" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors">
+              BI COURSE CONTENT ↗
+            </a>
+            <a href="https://skills.yourlearning.ibm.com/activity/PLAN-465566FEDEC9" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 transition-colors">
+              IBM SKILLSBUILD PROGRAM ↗
+            </a>
+          </div>
 
           <div className="space-y-5">
             <h3 className="text-sm font-bold tracking-widest text-green-400">CERTIFICATIONS</h3>
